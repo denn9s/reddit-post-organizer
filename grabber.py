@@ -1,4 +1,4 @@
-import prawInfo
+from prawInfo import reddit
 
 def main():
 	pass
