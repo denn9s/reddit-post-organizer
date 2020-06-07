@@ -1,3 +1,5 @@
+import prawInfo
+
 def main():
 	pass
 
