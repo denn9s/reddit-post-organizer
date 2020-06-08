@@ -1,10 +1,17 @@
 class LocalSubmission:
 	def __init__(self, username, date, subreddit, permalink, isSelfText):
+		self.title = title
 		self.username = username
 		self.date = date
 		self.subreddit = subreddit
 		self.permalink = permalink
 		self.isSelfText = isSelfText
+
+	def setTitle(self, title):
+		self.title = title
+
+	def getTitle(self):
+		return self.title
 
 	def setUsername(self, username):
 		self.username = username
