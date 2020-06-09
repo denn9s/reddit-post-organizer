@@ -1,5 +1,5 @@
 class LocalSubmission:
-	def __init__(self, username, date, subreddit, permalink, isSelfText):
+	def __init__(self, title, username, date, subreddit, permalink, isSelfText):
 		self.title = title
 		self.username = username
 		self.date = date
@@ -37,7 +37,7 @@ class LocalSubmission:
 	def getPermalink(self):
 		return self.permalink
 
-	def setIsSelfText(self):
+	def setIsSelfText(self, isSelfText):
 		self.isSelfText = isSelfText
 
 	def getIsSelfText(self):
