@@ -19,7 +19,7 @@ def createLocalSubmissionObject(submission):
 		url = submission.url
 	else:
 		url = 'https://reddit.com' + submission.permalink
-	return LocalSubmission(title, username, date, subreddit, permalink, selfText)
+	return LocalSubmission(title, username, date, subreddit, permalink, selfText, url)
 
 def main():
 	submission = inputLink(testSelfLink)
