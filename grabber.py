@@ -2,6 +2,7 @@ from prawInfo import reddit
 from localSubmission import LocalSubmission
 
 testLink = 'https://old.reddit.com/r/nba/comments/c0ky2l/board_man_celebrates/'
+testSelfLink = 'https://old.reddit.com/r/nba/comments/hbgvqi/marcus_morris_career_points_7248_markieff_morris/'
 
 def inputLink(link):
 	submission = reddit.submission(url = link)
