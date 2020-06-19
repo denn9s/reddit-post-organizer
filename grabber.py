@@ -15,10 +15,14 @@ def createLocalSubmissionObject(submission):
 	subreddit = submission.subreddit.display_name
 	permalink = submission.permalink
 	selfText = submission.is_self
+	if (selfText is False):
+		url = submission.url
+	else:
+		url = 'https://reddit.com' + submission.permalink
 	return LocalSubmission(title, username, date, subreddit, permalink, selfText)
 
 def main():
-	submission = inputLink(testLink)
+	submission = inputLink(testSelfLink)
 	submissionObject = createLocalSubmissionObject(submission)
 
 if __name__ == '__main__':
