@@ -1,10 +1,19 @@
 import sys
 
+def checkArguments(arguments):
+    argumentCount = len(arguments) # first argument is file name
+    if (argumentCount == 2):
+        if ('redd.it' in arguments[0]) or ('reddit.com' in arguments[0]):
+            return True
+        else:
+            return False
+    else:
+        return False
+
 def getArguments():
-    argumentCount = len(sys.argv) - 1 # first argument is file name
     arguments = sys.argv[1:]
-    for item in arguments:
-        print(item)
+    if (checkArguments(arguments) == False):
+        print('Incorrect input')
 
 def main():
     getArguments()
